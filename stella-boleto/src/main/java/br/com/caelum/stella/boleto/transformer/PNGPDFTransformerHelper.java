@@ -113,7 +113,7 @@ class PNGPDFTransformerHelper {
 
 		this.writer.write(420, LINHA6, boleto.getEmissor()
 				.getAgenciaFormatado()
-				+ " - "
+				+ "-"
 				+ boleto.getEmissor().getDigitoAgencia()
 				+ " / "
 				+ boleto.getBanco().getContaCorrenteDoEmissorFormatado(
