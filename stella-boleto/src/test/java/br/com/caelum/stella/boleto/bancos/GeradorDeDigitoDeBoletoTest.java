@@ -16,6 +16,7 @@ public class GeradorDeDigitoDeBoletoTest {
 		codigos.put("2379316800000001002949060000000000300065800", 6);
 		codigos.put("0000039104766", 3);
 		codigos.put("3999100100001200000351202000003910476618602", 3);
+		codigos.put("005507700010004000000019",0);
 
 		for (String codigo : codigos.keySet()) {
 			Assert.assertEquals(codigos.get(codigo).intValue(), gerador.geraDigitoMod11(codigo));

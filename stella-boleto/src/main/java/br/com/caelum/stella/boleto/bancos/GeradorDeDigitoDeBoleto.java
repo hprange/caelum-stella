@@ -12,15 +12,11 @@ public class GeradorDeDigitoDeBoleto {
                     * multiplicador;
         }
 
-        soma *= 10;
-
         int resto = soma % 11;
 
-        if (resto == 10 || resto == 0) {
-            return 1;
-        } else {
-            return resto;
-        }
+        int digito = 11 - resto;
+
+        return digito > 9 ? 0 : digito;
     }
 
     public int geraDigitoMod10(String campo) {
